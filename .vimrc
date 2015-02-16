@@ -1,5 +1,7 @@
-filetype on
-:set nu
+set nocompatible
+filetype off
+let mapleader=","
+set nu
 syntax on
 
 " Setup indentation
@@ -22,3 +24,12 @@ autocmd Filetype javascript setlocal ts=2 sw=2 sts=2
 set incsearch
 set ignorecase
 set smartcase
+
+" Create window splits easier
+nnoremap <silent>vv :vsp<CR>
+nnoremap <silent>ss :sp<CR>
+" Easier moving around panes
+nnoremap <C-j> <C-w><C-j>
+nnoremap <C-h> <C-w><C-h>
+nnoremap <C-k> <C-w><C-k>
+nnoremap <C-l> <C-w><C-l>
