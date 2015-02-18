@@ -25,9 +25,15 @@ set incsearch
 set ignorecase
 set smartcase
 
+" Automatically insert closing brace after pressing enter
+inoremap {<CR> {<CR>}<Esc>O
+inoremap (<CR> (<CR><CR>)<Esc>ki
+inoremap (<space> ()<Esc>i
+
 " Create window splits easier
 nnoremap <silent>vv :vsp<CR>
 nnoremap <silent>ss :sp<CR>
+
 " Easier moving around panes
 nnoremap <C-j> <C-w><C-j>
 nnoremap <C-h> <C-w><C-h>
