@@ -4,6 +4,11 @@ let mapleader=","
 set nu
 syntax on
 
+" Colour scheme
+set background=dark
+set t_Co=256
+colorscheme solarized 
+
 " Setup indentation
 set autoindent
 filetype plugin indent on
