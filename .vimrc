@@ -4,6 +4,25 @@ let mapleader=","
 set nu
 syntax on
 
+" Setup Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#rc()
+
+" Vundle bundles
+Bundle 'gmarik/vundle'
+Bundle 'ShowPairs'
+Bundle 'repeat.vim'
+Bundle 'surround.vim'
+Bundle 'mhinz/vim-startify'
+Bundle 'sukima/xmledit'
+
+" XML edit (bundle options)
+let xml_use_xhtml = 1
+
+" Startify (bundle options)
+let g:startify_bookmarks = [ '~/.vimrc' ]
+let g:startify_show_files_number = 5
+
 " Colour scheme
 set background=dark
 set t_Co=256
