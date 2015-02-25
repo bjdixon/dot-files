@@ -28,6 +28,13 @@ set background=dark
 set t_Co=256
 colorscheme solarized 
 
+" Highlight current line
+set cul
+hi CursorLine term=none cterm=none ctermbg=236
+
+" Always keep 5 lines from bottom/top
+set scrolloff=5
+
 " Setup indentation
 set autoindent
 filetype plugin indent on
