@@ -15,6 +15,8 @@ Bundle 'repeat.vim'
 Bundle 'surround.vim'
 Bundle 'mhinz/vim-startify'
 Bundle 'sukima/xmledit'
+Bundle 'klen/python-mode'
+Bundle 'kien/ctrlp.vim'
 
 " XML edit (bundle options)
 let xml_use_xhtml = 1
@@ -22,6 +24,9 @@ let xml_use_xhtml = 1
 " Startify (bundle options)
 let g:startify_bookmarks = [ '~/.vimrc' ]
 let g:startify_show_files_number = 5
+
+" Ctrl-P mapping
+map <leader>t <C-p>
 
 " Colour scheme
 set background=dark
