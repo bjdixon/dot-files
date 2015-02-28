@@ -45,7 +45,7 @@ set autoindent
 filetype plugin indent on
 filetype plugin on
 
-" Default indentaion and tabs
+" Default indentation and tabs
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -60,6 +60,12 @@ autocmd Filetype javascript setlocal ts=2 sw=2 sts=2
 set incsearch
 set ignorecase
 set smartcase
+
+" Replace using current search term
+map <leader>r :%s///g<left><left>
+
+" Toggle search highlighting
+map <leader>h :set hlsearch!<CR>
 
 " Automatically insert closing brace after pressing enter
 inoremap {<CR> {<CR>}<Esc>O
