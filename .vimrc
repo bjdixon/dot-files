@@ -89,6 +89,9 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+" Split open vimrc
+map <leader>v :vs ~/.vimrc<CR>
+
 " Write with sudo using w!!
 cmap w!! %!sudo tee > /dev/null %
 
