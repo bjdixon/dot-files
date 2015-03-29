@@ -3,7 +3,8 @@ Dot Files
 
 *Contents*
 
-.vimrc
+* .vimrc
+* .jshintrc
 
 .vimrc
 ------
@@ -11,5 +12,11 @@ Dot Files
 Installation:
 
 * cp -r .vim\* ~/
+* inside vim :BundleAll
+
+.jshintrc
+---------
+
+* cp .jshintrc ~/
 * inside vim :BundleAll
 
