@@ -1,0 +1,27 @@
+{
+  // Settings
+  "passfail": false, // Stop on first error.
+  "maxerr": 100, // Maximum error before stopping.
+
+  // Globals
+  "browser": true, // Standard browser globals
+  "node": false,
+  "rhino": false,
+  "couch": false,
+  "jquery": true,
+  "ender": true,
+  "prototypejs": false,
+  "mootools": false,
+  "dojo": false,
+  "predef": [  // Custom globals.
+    "Angular"
+  ],
+
+  // Development
+  "debug": true, // Allow debugger statements
+  "devel": true, // Allow developments statements
+
+  // ECMAScript 5.
+  "es5": true, // Allow ECMAScript 5 syntax.
+  "strict": true, // Require `use strict` pragma  in every file.
+  "globalstrict": true, // Allow global "use strict"
