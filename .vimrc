@@ -18,6 +18,7 @@ Bundle 'sukima/xmledit'
 Bundle 'klen/python-mode'
 Bundle 'kien/ctrlp.vim'
 Bundle 'wookiehangover/jshint.vim'
+Bundle 'tpope/vim-fugitive'
 
 " XML edit (bundle options)
 let xml_use_xhtml = 1
