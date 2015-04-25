@@ -183,6 +183,10 @@ au InsertLeave * hi StatColor guibg=#95e454 guifg=black ctermbg=lightgreen cterm
 " /Improved status line
 """""""""""""""""""""""""""""""""
 
+" Speed up redraws
+set lazyredraw
+set ttyfast
+
 set mouse=a
 
 " Gui
