@@ -19,6 +19,7 @@ Bundle 'klen/python-mode'
 Bundle 'kien/ctrlp.vim'
 Bundle 'wookiehangover/jshint.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'ap/vim-css-color'
 
 " XML edit (bundle options)
 let xml_use_xhtml = 1
@@ -34,6 +35,9 @@ map <leader>t <C-p>
 set background=dark
 set t_Co=256
 colorscheme solarized 
+
+" Colours for .less as well as .css files
+au BufNewFile,BufRead *.less set filetype=css
 
 " Highlight current line
 set cul
