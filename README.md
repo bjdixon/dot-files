@@ -29,8 +29,6 @@ Installation:
 
 * cp .bashrc ~/
 * cp .dircolors ~/
-* cp Solarized_Dark.colorscheme ~/.kde/share/apps/konsole/
-* Open Konsole and select "Settings", then "Manage Profiles", then "Edit Profile", then "Appearance". Select the Solarized theme and click "Okay"
 * source ~/.bashrc
 
 *.bash_profile* - I use this for mac
