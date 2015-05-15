@@ -20,7 +20,6 @@ Installation:
 ---------
 
 * cp .jshintrc ~/
-* inside vim :PluginInstall
 
 .bash\*
 ------
@@ -29,7 +28,7 @@ Installation:
 
 * cp .bashrc ~/
 * cp .dircolors ~/
-* cp Solarized_Dark.colorscheme ~/.kde/share/apps/konsole/
+* cp Solarized\_Dark.colorscheme ~/.kde/share/apps/konsole/
 * Open Konsole and select "Settings", then "Manage Profiles", then "Edit Profile", then "Appearance". Select the Solarized theme and click "Okay"
 * source ~/.bashrc
 
