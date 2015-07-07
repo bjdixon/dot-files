@@ -14,7 +14,9 @@
   "mootools": false,
   "dojo": false,
   "predef": [  // Custom globals.
-    "Angular"
+    "Angular",
+    "module",
+    "exports"
   ],
 
   // Development
