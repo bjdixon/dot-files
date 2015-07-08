@@ -16,7 +16,11 @@
   "predef": [  // Custom globals.
     "Angular",
     "module",
-    "exports"
+    "exports",
+    "require",
+    "describe",
+    "it",
+    "expect"
   ],
 
   // Development
