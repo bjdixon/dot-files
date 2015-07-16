@@ -39,6 +39,9 @@ colorscheme solarized
 " Colours for .less as well as .css files
 au BufNewFile,BufRead *.less set filetype=css
 
+" Colours for json files
+au BufNewFile,BufRead *.json set filetype=javascript
+
 " Highlight current line
 set cul
 hi CursorLine term=none cterm=none ctermbg=236
