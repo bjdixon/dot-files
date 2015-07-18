@@ -1,0 +1,3 @@
+[user]
+	name = firstName lastName
+	email = name@emaildomain.com
