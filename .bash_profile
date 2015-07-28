@@ -12,5 +12,9 @@ get_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 PS1='\[\033[01;32m\]\u@\h\[\033[00;34m\] \w $(color_branch)$(get_git_branch) \[\033[01;34m\]\n\$\[\033[00m\] '
+
+# use vi commands
+set -o vi
+
 alias ls='ls -AGp'
 alias vi='vim'

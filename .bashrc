@@ -101,6 +101,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# use vi commands
+set -o vi
+
 # turn off touchpad
 synclient TouchpadOff=1
 
