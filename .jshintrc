@@ -9,7 +9,6 @@
   "rhino": false,
   "couch": false,
   "jquery": true,
-  "ender": true,
   "prototypejs": false,
   "mootools": false,
   "dojo": false,
@@ -28,7 +27,6 @@
   "devel": true, // Allow developments statements
 
   // ECMAScript 5.
-  "es5": true, // Allow ECMAScript 5 syntax.
   "strict": true, // Require `use strict` pragma  in every file.
   "globalstrict": true, // Allow global "use strict"
 
@@ -44,7 +42,6 @@
   "expr": false, // Tolerate `ExpressionStatement` as Programs.
   "forin": false, // Tolerate `for in` loops without `hasOwnPrototype`.
   "immed": true, // Require immediate invocations to be wrapped in parens
-  "latedef": true, // Prohipit variable use before definition.
   "loopfunc": false, // Allow functions to be defined within loops.
   "noarg": true, // Prohibit use of `arguments.caller` and `arguments.callee`.
   "regexp": true, // Prohibit `.` and `[^...]` in regular expressions.
@@ -58,5 +55,6 @@
   "plusplus": false, // Prohibit use of `++` & `--`.
   "trailing": true, // Prohibit trailing whitespaces.
   "white": true, // Check against strict whitespace and indentation rules.
+  "elision": true, // allow empty array expressions 
   "indent": 2 // Specify indentation spacing
 }
