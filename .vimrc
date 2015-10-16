@@ -27,6 +27,14 @@ let xml_use_xhtml = 1
 " Startify (bundle options)
 let g:startify_bookmarks = [ '~/.vimrc' ]
 let g:startify_show_files_number = 5
+let g:startify_custom_header = [
+            \'                        ',
+            \'       /) /) ♥ ♥(\ (\   ',
+            \'      =( ^.^)=♥=(. . )= ',
+            \'      C(") (") (") (")כ ',
+            \'',
+            \'',
+            \ ]
 
 " Ctrl-P mapping
 map <leader>t <C-p>
