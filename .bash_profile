@@ -1,5 +1,6 @@
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/git/bin:$PATH"
 ulimit -n 1024
+HISTCONTROL=ignoreboth
 color_branch() {
   if [[ -n "$(git status --porcelain 2> /dev/null)" ]]; 
   then
