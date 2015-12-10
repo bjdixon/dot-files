@@ -110,3 +110,6 @@ synclient TouchpadOff=1
 # Alias definitions.
 alias vi='vim'
 alias node='nodejs'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
