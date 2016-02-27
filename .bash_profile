@@ -19,6 +19,7 @@ set -o vi
 
 alias ls='ls -AGp'
 alias vi='vim'
+alias beep='speaker-test -p 64 -P 4 -t sine -f 850 -l 1'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
