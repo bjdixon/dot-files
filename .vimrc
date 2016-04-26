@@ -38,6 +38,8 @@ let g:startify_custom_header = [
 
 " Ctrl-P mapping
 map <leader>t <C-p>
+" and show hidden files by default
+let g:ctrlp_show_hidden = 1
 
 " Colour scheme
 set background=dark
