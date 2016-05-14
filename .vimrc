@@ -29,28 +29,23 @@ let g:startify_bookmarks = [ '~/.vimrc' ]
 let g:startify_show_files_number = 5
 let g:startify_custom_header = [
             \'                        ',
-            \'       /) /) ♥ ♥(\ (\   ',
+            \'       /) /) ♥ ♥(\ (\  ',
             \'      =( ^.^)=♥=(. . )= ',
             \'      C(") (") (") (")כ ',
             \'',
             \'',
             \ ]
 
-" Ctrl-P mapping
-map <leader>t <C-p>
-" and show hidden files by default
-let g:ctrlp_show_hidden = 1
-
 " Colour scheme
 set background=dark
 set t_Co=256
 colorscheme solarized 
 
+" Toggle bg
+map <Leader>b : let &background = (&background == 'light' ? 'dark' : 'light')<CR>
+
 " Colours for .less as well as .css files
 au BufNewFile,BufRead *.less set filetype=css
-
-" Colours for json files
-au BufNewFile,BufRead *.json set filetype=javascript
 
 " Highlight current line
 set cul
@@ -65,11 +60,11 @@ filetype plugin indent on
 filetype plugin on
 
 " Default indentation and tabs
-set tabstop=4
 set shiftwidth=4
+set tabstop=4
 set softtabstop=4
-set expandtab
 set smarttab
+set expandtab
 set backspace=2
 
 " JavaScript indentation
@@ -94,7 +89,6 @@ inoremap (<space> ()<Esc>i
 " Create window splits easier
 nnoremap <silent>vv :vsp<CR>
 nnoremap <silent>ss :sp<CR>
-
 " Easier moving around panes
 nnoremap <C-j> <C-w><C-j>
 nnoremap <C-h> <C-w><C-h>
@@ -107,6 +101,11 @@ set hidden
 set nobackup
 set nowritebackup
 set noswapfile
+
+" Ctrl-P mapping
+map <leader>t <C-p>
+" and show hidden files
+let g:ctrlp_show_hidden = 1
 
 " Split open vimrc
 map <leader>v :vs ~/.vimrc<CR>
@@ -213,3 +212,17 @@ if has('gui_running')
 endif
 source $VIMRUNTIME/mswin.vim
 
+" Disable pylint warnings for:
+" - Comments with no leading space
+" - Lines too long
+let g:pymode_lint_ignore = "E265,E501"
+" Disable python folding
+"let g:pymode_folding = 0
+set foldlevelstart=2
+" Disable automatic python doc (use 'K' instead when required)
+set completeopt-=preview
+" Exended autocompletion (Not sure if it actually does anything)
+let g:pymode_rope_autoimport = 1
+
+" Format json
+" :%!python -m json.tool
