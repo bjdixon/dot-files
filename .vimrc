@@ -20,7 +20,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'wookiehangover/jshint.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'ap/vim-css-color'
-Bundle 'easymotion/vim-easymotion'
 
 " XML edit (bundle options)
 let xml_use_xhtml = 1
@@ -199,25 +198,6 @@ au InsertLeave * hi StatColor guibg=#95e454 guifg=black ctermbg=lightgreen cterm
 
 " /Improved status line
 """""""""""""""""""""""""""""""""
-
-" EasyMotion config
-let g:EasyMotion_do_mapping = 0 " Disable default mappings
-
-" Jump to anywhere you want with minimal keystrokes, with just one key binding.
-" `s{char}{label}`
-nmap s <Plug>(easymotion-overwin-f)
-" or
-" `s{char}{char}{label}`
-" Need one more keystroke, but on average, it may be more comfortable.
-nmap s <Plug>(easymotion-overwin-f2)
-
-" Turn on case insensitive feature
-let g:EasyMotion_smartcase = 1
-
-" JK motions: Line motions
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
-" /EasyMotion config
 
 " Speed up redraws
 set lazyredraw
